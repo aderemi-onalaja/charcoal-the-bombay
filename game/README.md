@@ -1,6 +1,6 @@
 # 🐈‍⬛ Charcoal the Bombay
 
-**Charcoal the Bombay** is a mobile-first 2D side-scrolling platformer inspired by classic **Game Boy Advance–era games**, built as a modern iOS prototype using AI-assisted development.
+**Charcoal the Bombay** is a 2D side-scrolling platformer inspired by classic handheld platformers, built as a fast-moving prototype using **Lovable** and intended to ship as a mobile app via **Capacitor** (iOS-first).
 
 The project stars **Charcoal**, a Bombay cat, navigating colourful environments, avoiding enemies, and collecting treats in a cozy, nostalgic platforming experience.
 
@@ -37,33 +37,35 @@ It is not intended to be a finished commercial game (yet), but rather a:
 
 ---
 
-## 🛠 Tools & Technology
 
-### Game Development
-- **iOS mobile platform**
-- 2D side-scrolling architecture
-- Touch-first controls
-- Lightweight, performance-focused structure
+- ## Build approach
 
-### AI Tooling
-- **Rork.ai** — used as the AI development environment to scaffold, run, and iterate on the mobile game prototype using structured, phase-based prompts.
+This project is being developed **web-first** for fast iteration (UI + gameplay loop), then packaged as a native mobile app using **Capacitor**.
 
-**Primary model used:**
-- **GPT-5.2** — for:
-  - Game architecture
-  - Core mechanics
-  - Code scaffolding
-  - Iterative feature expansion
+The goal is to keep a single codebase that can run:
+- In the browser for rapid development
+- On iOS as a native-wrapped app (Capacitor)
 
-GPT-5.2 was chosen for its strength in:
-- End-to-end product thinking
-- Structured code generation
-- Managing complex constraints across multiple development phases
+---
 
-Additional models may be used selectively for:
-- Visual style descriptions
-- Narrative tone
-- Asset concepts
+## Tools & technology
+
+### Primary build tooling
+- **Lovable** — used to scaffold and iterate on the gameplay prototype (UI, game loop, core mechanics).
+- **Capacitor** — intended for packaging the web build into a native iOS app shell (App Store path).
+
+### Language / framework
+- **TypeScript** (primary)
+- Web runtime (canvas / DOM / web-based rendering depending on implementation)
+
+### AI / models used
+This project is developed with AI assistance for planning, prompting, and implementation guidance.
+
+- **GPT-5.2** — used for game architecture, level design specs, mechanics breakdown, and prompt-driven iteration.
+
+- ## Note on tooling
+
+Early experiments used hosted AI app builders for rapid scaffolding, but the project moved to a **Lovable + Capacitor** workflow for smoother iteration, better performance control, and a clearer path to an App Store-ready build.
 
 ---
 
@@ -85,13 +87,11 @@ This approach prioritises:
 
 ## 🚀 Status
 
-- Current state: **Playable prototype / MVP**
-- Scope: **Single-level platformer**
-- Future potential:
-  - Additional levels
-  - Expanded abilities
-  - Polished assets
-  - App Store release
+## Status
+
+- Current: **Playable prototype (web-first)**
+- Next: **Capacitor wrap for iOS**
+- Scope: **Single-level MVP**
 
 ---
 
